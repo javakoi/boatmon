@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BOATMON enterprises seed store - High-quality agriculture seeds for optimal crop performance.">
+    <title>Store - BOATMON enterprises</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="White Logo.png">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html" class="nav-logo-link">
+                    <img src="White Logo.png" alt="BOATMON enterprises Logo" class="nav-logo-img">
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a></li>
+                <li class="nav-item">
+                    <a href="store.html" class="nav-link">Store</a>
+                </li>
+                <li class="nav-item">
+                    <a href="media.html" class="nav-link">Media</a>
+                </li>
+                <li class="nav-item">
+                    <a href="calendar.html" class="nav-link">Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="hero-section" style="padding: 60px 20px;">
+            <div class="container">
+                <h1 class="hero-title">Seed Store</h1>
+                <p class="hero-subtitle">High-Quality Agriculture Seeds for Your Farm</p>
+            </div>
+        </section>
+
+        <!-- Store Info -->
+        <section class="section">
+            <div class="container">
+                <div class="content-card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h2>Quality Seeds for Optimal Performance</h2>
+                    <p style="font-size: 1.1rem; color: var(--text-light); margin-top: 1rem;">
+                        At BOATMON enterprises, we source only the highest quality agriculture seeds, ensuring optimal germination rates and crop performance. All seeds are tested for quality and stored under optimal conditions.
+                    </p>
+                    <p style="font-size: 1.1rem; color: var(--text-light); margin-top: 1rem;">
+                        <strong>Payment Options:</strong> Pay securely online via PayPal or in person when you pick up your order. Contact us for bulk pricing and custom orders.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seed Categories -->
+        <section class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Seed Categories</h2>
+                <div class="content-grid" id="seed-products">
+                    <!-- Product cards will be populated here -->
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, var(--olive-medium), var(--olive-light)); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🌾</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Corn Seed - Premium Hybrid</h3>
+                            <p class="product-description">High-yield hybrid corn seed with excellent disease resistance and drought tolerance. Suitable for various soil types.</p>
+                            <div class="product-price">$45.00 / bag (50 lbs)</div>
+                            <div class="paypal-button" id="paypal-button-corn"></div>
+                            <button class="btn" onclick="addToCart('Corn Seed', 45.00)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, var(--olive-medium), var(--olive-light)); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🌾</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Soybean Seed - High Protein</h3>
+                            <p class="product-description">Premium soybean seed with high protein content and excellent yield potential. Well-suited for rotation systems.</p>
+                            <div class="product-price">$38.00 / bag (50 lbs)</div>
+                            <div class="paypal-button" id="paypal-button-soybean"></div>
+                            <button class="btn" onclick="addToCart('Soybean Seed', 38.00)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, var(--olive-medium), var(--olive-light)); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🌾</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Wheat Seed - Winter Variety</h3>
+                            <p class="product-description">Hardy winter wheat seed with excellent cold tolerance and high yield potential. Ideal for fall planting.</p>
+                            <div class="product-price">$32.00 / bag (50 lbs)</div>
+                            <div class="paypal-button" id="paypal-button-wheat"></div>
+                            <button class="btn" onclick="addToCart('Wheat Seed', 32.00)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, var(--olive-medium), var(--olive-light)); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🌾</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cotton Seed - Premium Variety</h3>
+                            <p class="product-description">High-quality cotton seed with excellent fiber quality and yield. Disease-resistant and well-adapted.</p>
+                            <div class="product-price">$55.00 / bag (50 lbs)</div>
+                            <div class="paypal-button" id="paypal-button-cotton"></div>
+                            <button class="btn" onclick="addToCart('Cotton Seed', 55.00)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, var(--olive-medium), var(--olive-light)); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🌾</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Cover Crop Mix</h3>
+                            <p class="product-description">Premium cover crop seed mix including clover, rye, and vetch. Improves soil health and prevents erosion.</p>
+                            <div class="product-price">$28.00 / bag (25 lbs)</div>
+                            <div class="paypal-button" id="paypal-button-cover"></div>
+                            <button class="btn" onclick="addToCart('Cover Crop Mix', 28.00)">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image" style="background: linear-gradient(135deg, var(--olive-medium), var(--olive-light)); display: flex; align-items: center; justify-content: center; color: white; font-size: 3rem;">🌾</div>
+                        <div class="product-info">
+                            <h3 class="product-name">Custom Seed Blend</h3>
+                            <p class="product-description">Custom seed blend tailored to your specific needs and soil conditions. Contact us for consultation and pricing.</p>
+                            <div class="product-price">Contact for Pricing</div>
+                            <a href="contact.html" class="btn">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shopping Cart -->
+        <section class="section">
+            <div class="container">
+                <div class="content-card" style="max-width: 600px; margin: 0 auto;">
+                    <h2 style="text-align: center; margin-bottom: 2rem;">Shopping Cart</h2>
+                    <div id="cart-items" style="margin-bottom: 2rem;">
+                        <p style="text-align: center; color: var(--text-light);">Your cart is empty</p>
+                    </div>
+                    <div id="cart-total" style="display: none; text-align: center; font-size: 1.5rem; font-weight: 700; color: var(--olive-dark); margin-bottom: 2rem;">
+                        Total: $<span id="total-amount">0.00</span>
+                    </div>
+                    <div id="checkout-section" style="display: none; text-align: center;">
+                        <div id="paypal-checkout" style="margin-bottom: 1rem;"></div>
+                        <p style="color: var(--text-light); margin-top: 1rem;">Or pay in person when you pick up your order</p>
+                        <a href="contact.html" class="btn btn-outline" style="margin-top: 1rem;">Contact for Pickup</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Info -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>Quality Guarantee</h3>
+                        <p>All seeds are tested for germination rates and stored under optimal conditions. We stand behind the quality of every product we sell.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Bulk Orders</h3>
+                        <p>Contact us for bulk pricing on large orders. We offer competitive rates for commercial farming operations.</p>
+                    </div>
+                    <div class="content-card">
+                        <h3>Expert Advice</h3>
+                        <p>Not sure which seeds are right for your operation? Our team can provide expert recommendations based on your soil analysis and goals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="White Logo.png" alt="BOATMON enterprises Logo" class="footer-logo-img">
+                    <h3>BOATMON enterprises</h3>
+                    <p>Soil. Seed. Solutions.</p>
+                    <p>Professional agriculture services for optimal crop performance.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="about.html">About</a></p>
+                    <p><a href="services.html">Services</a></p>
+                    <p><a href="store.html">Store</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p><a href="services.html">Soil & Tissue Sampling</a></p>
+                    <p><a href="services.html">Amendment Recommendations</a></p>
+                    <p><a href="services.html">Fertilizer Scripts</a></p>
+                    <p><a href="store.html">Seed Sales</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><a href="contact.html">Contact Us</a></p>
+                    <p><a href="calendar.html">Book Appointment</a></p>
+                    <p><a href="media.html">Media</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BOATMON enterprises. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PayPal SDK -->
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID&currency=USD"></script>
+    <script src="script.js"></script>
+    <script>
+        // Shopping cart functionality
+        let cart = [];
+
+        function addToCart(productName, price) {
+            cart.push({ name: productName, price: price });
+            updateCart();
+        }
+
+        function removeFromCart(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cart-items');
+            const cartTotal = document.getElementById('cart-total');
+            const checkoutSection = document.getElementById('checkout-section');
+            const totalAmount = document.getElementById('total-amount');
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<p style="text-align: center; color: var(--text-light);">Your cart is empty</p>';
+                cartTotal.style.display = 'none';
+                checkoutSection.style.display = 'none';
+                return;
+            }
+
+            let total = 0;
+            let itemsHtml = '<ul style="list-style: none; padding: 0;">';
+            cart.forEach((item, index) => {
+                total += item.price;
+                itemsHtml += `
+                    <li style="display: flex; justify-content: space-between; padding: 0.75rem; border-bottom: 1px solid var(--cream);">
+                        <span>${item.name}</span>
+                        <span style="display: flex; align-items: center; gap: 1rem;">
+                            <span>$${item.price.toFixed(2)}</span>
+                            <button onclick="removeFromCart(${index})" style="background: none; border: none; color: var(--olive-medium); cursor: pointer; font-size: 1.2rem;">×</button>
+                        </span>
+                    </li>
+                `;
+            });
+            itemsHtml += '</ul>';
+            cartItems.innerHTML = itemsHtml;
+            totalAmount.textContent = total.toFixed(2);
+            cartTotal.style.display = 'block';
+            checkoutSection.style.display = 'block';
+
+            // Initialize PayPal button
+            initPayPalButton(total);
+        }
+
+        function initPayPalButton(total) {
+            const paypalCheckout = document.getElementById('paypal-checkout');
+            paypalCheckout.innerHTML = '';
+
+            paypal.Buttons({
+                createOrder: function(data, actions) {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: total.toFixed(2)
+                            },
+                            description: 'BOATMON enterprises Seed Purchase'
+                        }]
+                    });
+                },
+                onApprove: function(data, actions) {
+                    return actions.order.capture().then(function(details) {
+                        alert('Payment successful! Order ID: ' + details.id);
+                        cart = [];
+                        updateCart();
+                    });
+                },
+                onError: function(err) {
+                    alert('Payment error: ' + err);
+                }
+            }).render('#paypal-checkout');
+        }
+    </script>
+</body>
+</html>
+
